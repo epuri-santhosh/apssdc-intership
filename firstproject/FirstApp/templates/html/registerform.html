@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RGISTRATION FORM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <header style="text-align: center;" >
+		APSSDC TASK REGISTRATION FORM
+	</header>
+</head>
+
+<body style="background-color:lightyellow;">
+	<div style="background-color:black;" class="container bg-danger">
+		<form action="{% url 'registerform' %}" method="POST">
+         {% csrf_token %}
+
+			<hr>
+			<input type="text" name="firstname" placeholder="firstname" style="background-color: lime;" ><br>
+			<hr>
+			<input type="text" name="lastname" placeholder="lastname" style="background-color: orange;"><br>
+			<hr>
+			<input type="number" name="phonenumber" placeholder="phonenumber" style="background-color: lime;"><br>
+			<hr>
+			<input type="email" name="email" placeholder="emailid" style="background-color: pink;"><br>
+			<hr>
+			<div>
+				<h4>gender</h4>
+				male<input type="checkbox" name="gender" value="male">
+				female<input type="checkbox" name="gender" value="female">
+			</div>
+			<hr>
+			<div>
+			 <textarea name="adress" placeholder="adress"></textarea>
+            </div>
+			<hr>
+			<div>
+				<h4>language</h4>
+				Telugu<input type="checkbox" name="language" value="Telugu">
+				English<input type="checkbox" name="language" value="English">
+				Hindi<input type="checkbox" name="language" value="Hindi">
+			<hr>
+			<input type="submit" name="submit" value="Submit"style="background-color:pink;"><br>
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>

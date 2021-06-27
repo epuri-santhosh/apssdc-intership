@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>DISPLAYING OUTPUT OF TASK</title>
+	<title></title>
+</head>
+<body>
+	<div class="container mt-4"> 
+		<div class="card col-md-6 mx-auto">
+			<div class="card-body">
+				<h3>Your id is:{{y.id}}</h3>
+				<h4>Your name is:{{y.name}}</h4>
+				<h4>your email id is:{{y.email}}</h4>
+			</div>
+			<a href="{% url 'dt' %}" class="btn btn-outline-info ">Back </a>
+		</div>
+	</div>
+
+</body>
+</html>
